@@ -1,0 +1,37 @@
+2014-10-18 17:16:35 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pom.product' doesn't exist
+Stack Trace:
+#0 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(92): Cake\Database\Schema\Collection->_reflect('Column', 'product', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(62): Cake\Database\Schema\Collection->describe('product', Array)
+#2 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/ORM/Table.php(339): Cake\Database\Schema\CachedCollection->describe('product')
+#3 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/ORM/Table.php(412): Cake\ORM\Table->schema()
+#4 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Shell/Task/ModelTask.php(175): Cake\ORM\Table->primaryKey()
+#5 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Shell/Task/ModelTask.php(102): Cake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Shell/Task/ModelTask.php(89): Cake\Shell\Task\ModelTask->bake('Product')
+#7 [internal function]: Cake\Shell\Task\ModelTask->main('product')
+#8 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/Shell.php(376): call_user_func_array(Array, Array)
+#9 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/Shell.php(371): Cake\Console\Shell->runCommand(Array, false)
+#10 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(184): Cake\Console\Shell->runCommand(Array, true)
+#11 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(160): Cake\Console\ShellDispatcher->_dispatch()
+#12 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(117): Cake\Console\ShellDispatcher->dispatch()
+#13 /Users/mikael/Sites/pom/bin/cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2014-10-18 17:28:55 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pom.custoemrs' doesn't exist
+Stack Trace:
+#0 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(92): Cake\Database\Schema\Collection->_reflect('Column', 'custoemrs', Array, Object(Cake\Database\Schema\Table))
+#1 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(62): Cake\Database\Schema\Collection->describe('custoemrs', Array)
+#2 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/ORM/Table.php(339): Cake\Database\Schema\CachedCollection->describe('custoemrs')
+#3 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/ORM/Table.php(412): Cake\ORM\Table->schema()
+#4 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Shell/Task/ViewTask.php(258): Cake\ORM\Table->primaryKey()
+#5 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Shell/Task/ViewTask.php(134): Cake\Shell\Task\ViewTask->_loadController()
+#6 [internal function]: Cake\Shell\Task\ViewTask->main('custoemrs')
+#7 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/Shell.php(376): call_user_func_array(Array, Array)
+#8 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/Shell.php(371): Cake\Console\Shell->runCommand(Array, false)
+#9 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(184): Cake\Console\Shell->runCommand(Array, true)
+#10 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(160): Cake\Console\ShellDispatcher->_dispatch()
+#11 /Users/mikael/Sites/pom/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(117): Cake\Console\ShellDispatcher->dispatch()
+#12 /Users/mikael/Sites/pom/bin/cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#13 {main}
+
+
